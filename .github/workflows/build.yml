@@ -19,16 +19,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # Sigmastar [I6E]
-
-          - {"platform": "ssc30kq", "release": "fpv"}
-          - {"platform": "ssc30kq", "release": "lite"}
-          - {"platform": "ssc338q", "release": "fpv"}
-
-
           # Ingenic [T31]
-          - {"platform": "t31", "release": "lite"}
-          - {"platform": "t31", "release": "ultimate"}
+          - {"platform": "t31", "release": "fpv"}
 
     steps:
       - name: Checkout source
