@@ -56,6 +56,12 @@
 /etc/sensor/sc4336-t31.bin
 /etc/sensor/sc5235.yaml
 /etc/sensor/sc5235-t31.bin
+/etc/sensor/gc4653.yaml
+/etc/sensor/gc4653-t31.bin
+/etc/sensor/imx307.yaml
+/etc/sensor/imx307-t31.bin
+/lib/modules/3.10.14__isvp_swan_1.0__/ingenic/sensor_imx307_t31.ko
+/lib/modules/3.10.14__isvp_swan_1.0__/ingenic/sensor_gc4653_t31.ko
 /lib/modules/3.10.14__isvp_swan_1.0__/ingenic/sensor_gc2053_t31.ko
 /lib/modules/3.10.14__isvp_swan_1.0__/ingenic/sensor_gc2083_t31.ko
 /lib/modules/3.10.14__isvp_swan_1.0__/ingenic/sensor_gc4023_t31.ko
