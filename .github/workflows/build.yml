@@ -21,6 +21,7 @@ jobs:
         include:
           # Ingenic [T31]
           - {"platform": "t31", "release": "lite"}
+          - {"platform": "t31", "release": "fpv"}
 
     steps:
       - name: Checkout source
