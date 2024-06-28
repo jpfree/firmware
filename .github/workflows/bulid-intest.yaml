@@ -20,7 +20,7 @@ jobs:
       matrix:
         include:
           # Ingenic [T31]
-          - {"platform": "t31", "release": "fpv"}
+          - {"platform": "t31", "release": "ultimate"}
 
     steps:
       - name: Checkout source
