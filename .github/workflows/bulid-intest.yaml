@@ -20,7 +20,7 @@ jobs:
       matrix:
         include:
           # Ingenic [T31]
-          - {"platform": "t31", "release": "ultimate"}
+          - {"platform": "t31", "release": "ultimate_jxq03p_rtl8818ftv"}
 
     steps:
       - name: Checkout source
