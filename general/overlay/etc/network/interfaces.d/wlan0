@@ -1,21 +1,8 @@
-#iface wlan0 inet dhcp
- #   pre-up wpa_passphrase "a1112" "a1112a1112" > /tmp/wpa_supplicant.conf
-  #  pre-up sed -i 's/#psk.*/scan_ssid=1/g' /tmp/wpa_supplicant.conf
-   # pre-up wpa_supplicant -B -i wlan0 -D nl80211,wext -c /tmp/wpa_supplicant.conf
-    #post-down killall -q wpa_supplicant
-
 auto wlan0
 iface wlan0 inet dhcp
-    pre-up echo 10 > /sys/class/gpio/export
-    pre-up echo out > /sys/class/gpio/gpio10/direction
-    pre-up echo 1 > /sys/class/gpio/gpio10/value
-    pre-up  modprobe mac80211
-    sleep 1
-    pre-up  insmod /lib/modules/3.10.14__isvp_swan_1.0__/extra/8188fu.ko
-    sleep 1
+    pre-up sleep 1
     pre-up wlan_addr=$(fw_printenv -n wlanaddr); if [ -n "$wlan_addr" ]; then ip link set dev wlan0 address $wlan_addr; fi
-    post-up wpa_passphrase "$(fw_printenv -n wlanssid || echo a1112)" "$(fw_printenv -n wlanpass || echo a1112a1112)" > /tmp/wpa_supplicant.conf
+    post-up wpa_passphrase "$(fw_printenv -n wlanssid || echo a1113)" "$(fw_printenv -n wlanpass || echo a1113a1113)" > /tmp/wpa_supplicant.conf
     post-up sed -i '2i \\tscan_ssid=1' /tmp/wpa_supplicant.conf
     post-up wpa_supplicant -B -i wlan0 -D nl80211,wext -c /tmp/wpa_supplicant.conf
     post-down killall -q wpa_supplicant
-
