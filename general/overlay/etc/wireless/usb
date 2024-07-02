@@ -251,4 +251,12 @@ if [ "$1" = "atbm603x-t31-zte-k540" ]; then
 	exit 0
 fi
 
+# T31 IFlytek XFP301-M
+if [ "$1" = "8818fu-t31-iflytek" ]; then
+        set_gpio 10 1
+        modprobe mac80211
+        insmod /lib/modules/8188fu.ko
+        exit 0
+fi
+
 exit 1
