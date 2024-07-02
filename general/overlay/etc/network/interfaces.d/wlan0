@@ -3,7 +3,7 @@ iface wlan0 inet dhcp
     pre-up fw_setenv wlandev 8818fu-t31-iflytek
     pre-up sleep 1
     pre-up wlan_addr=$(fw_printenv -n wlanaddr); if [ -n "$wlan_addr" ]; then ip link set dev wlan0 address $wlan_addr; fi
-    post-up wpa_passphrase "$(fw_printenv -n wlanssid || echo a1113)" "$(fw_printenv -n wlanpass || echo a1113a1113)" > /tmp/wpa_supplicant.conf
+    post-up wpa_passphrase "$(fw_printenv -n wlanssid || echo a1112)" "$(fw_printenv -n wlanpass || echo a1112a1112)" > /tmp/wpa_supplicant.conf
     post-up sed -i '2i \\tscan_ssid=1' /tmp/wpa_supplicant.conf
     post-up wpa_supplicant -B -i wlan0 -D nl80211,wext -c /tmp/wpa_supplicant.conf
     post-down killall -q wpa_supplicant
