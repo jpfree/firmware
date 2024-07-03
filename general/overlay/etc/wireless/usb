@@ -255,7 +255,7 @@ fi
 if [ "$1" = "8818fu-t31-iflytek" ]; then
         set_gpio 10 1
         modprobe mac80211
-        insmod /lib/modules/8188fu.ko
+        insmod insmod /lib/modules/3.10.14__isvp_swan_1.0__/extra/8188fu.ko
         exit 0
 fi
 
