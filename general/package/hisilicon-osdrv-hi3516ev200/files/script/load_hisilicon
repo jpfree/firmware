@@ -344,7 +344,7 @@ if [ $# -lt 1 ]; then
 fi
 
 # Sensor config
-# SENSOR=${SENSOR:=imx307}
+ SENSOR=${SENSOR:=jxf37}
 #
 if [ -n "$SENSOR" ]; then
 	logger -s -p daemon.info -t hisilicon "Manualy set SENSOR as ${SENSOR}"
