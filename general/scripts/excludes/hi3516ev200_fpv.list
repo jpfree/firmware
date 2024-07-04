@@ -1,7 +1,7 @@
 /etc/sensors/gc2053_i2c_1080p.ini
 /etc/sensors/jxf22_i2c_1080p.ini
 /etc/sensors/jxf23_i2c_1080p.ini
-/etc/sensors/jxf37_i2c_1080p.ini
+#/etc/sensors/jxf37_i2c_1080p.ini
 /etc/sensors/sc2231_i2c_1080p.ini
 /etc/sensors/sc2232h_i2c_1080p.ini
 /etc/sensors/sc2239_i2c_1080p.ini
@@ -24,7 +24,7 @@
 /lib/modules/4.9.37/extra/open_acodec.ko
 /usr/lib/sensors/libsns_f22.so
 /usr/lib/sensors/libsns_f23.so
-/usr/lib/sensors/libsns_f37.so
+#/usr/lib/sensors/libsns_f37.so
 /usr/lib/sensors/libsns_gc2053.so
 /usr/lib/sensors/libsns_sc2231.so
 /usr/lib/sensors/libsns_sc2232h.so
