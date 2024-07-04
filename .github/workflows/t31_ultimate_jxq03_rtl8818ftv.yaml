@@ -2,9 +2,9 @@ name: t31_ultimate_jxq03_rtl8818ftv
 on:
   pull_request:
     branches:
-      - test
+      - master
   schedule:
-    - cron: '30 23 * * *'
+    - cron: '30 18 * * *'
   workflow_dispatch:
 
 env:
