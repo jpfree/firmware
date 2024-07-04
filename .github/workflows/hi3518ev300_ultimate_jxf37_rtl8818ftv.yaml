@@ -21,7 +21,7 @@ jobs:
         include:
           # Hisilicon [HI3516EV200]
           - {"platform": "hi3518ev300", "release": "ultimate_jxf37_rtl8818ftv"}
-          - {"platform": "hi3516ev200", "release": "fpv"}
+          #- {"platform": "hi3516ev200", "release": "fpv"}
           #- {"platform": "hi3518ev300", "release": "ultimate"}
 
     steps:
