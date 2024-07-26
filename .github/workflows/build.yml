@@ -20,8 +20,8 @@ jobs:
       matrix:
         include:
           # Ingenic [T31]
-          - {"platform": "t31", "release": "lite"}
-          - {"platform": "t31", "release": "fpv"}
+          # - {"platform": "t31", "release": "lite"}
+          # - {"platform": "t31", "release": "fpv"}
 
           # Sigmastar [I6E]
           - {"platform": "ssc30kq", "release": "fpv"}
