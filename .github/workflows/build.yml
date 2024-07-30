@@ -25,13 +25,13 @@ jobs:
 
           # Sigmastar [I6E]
           - {"platform": "ssc30kq", "release": "fpv"}
-          - {"platform": "ssc30kq", "release": "rubyfpv"}
+          #- {"platform": "ssc30kq", "release": "rubyfpv"}
           #- {"platform": "ssc30kq", "release": "lite"}
           - {"platform": "ssc30kq", "release": "ultimate"}
-          - {"platform": "ssc338q", "release": "fpv"}
-          - {"platform": "ssc338q", "release": "rubyfpv"}
+          #- {"platform": "ssc338q", "release": "fpv"}
+          #- {"platform": "ssc338q", "release": "rubyfpv"}
           #- {"platform": "ssc338q", "release": "lite"}
-          - {"platform": "ssc338q", "release": "ultimate"}
+          #- {"platform": "ssc338q", "release": "ultimate"}
 
     steps:
       - name: Checkout source
